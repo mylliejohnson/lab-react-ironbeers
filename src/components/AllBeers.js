@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios'
-import Header from './Header'
 
 function AllBeers(props) {
-
     let [allBeers, setAllBeers] = useState([])
 
     useEffect (async function () {

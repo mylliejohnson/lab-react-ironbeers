@@ -18,21 +18,9 @@ function App() {
       <Switch>
         <Route exact path="/" render={(props) => <Home />} />
         <Route exact path="/beers" render={(props) => <AllBeers />} />
-        <Route
-          exact
-          path="/one-beer/:id"
-          render={(props) => <OneBeer {...props} />}
-        />
-        <Route
-          exact
-          path="/random-beer"
-          render={(props) => <RandomBeer {...props} />}
-        />
-        <Route
-          exact
-          path="/new-beer"
-          render={(props) => <NewBeer {...props} />}
-        />
+        <Route exact path="/one-beer/:id" render={(props) => <OneBeer {...props} />}/>
+        <Route exact path="/random-beer" render={(props) => <RandomBeer {...props} />}/>
+        <Route exact path="/new-beer" render={(props) => <NewBeer {...props} />}/>
       </Switch>
     </div>
   );
